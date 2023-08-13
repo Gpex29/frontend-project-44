@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import {
   greeting, getRandom, gameLauncher,
-} from '../src/index.js';
+} from '../../src/index.js';
 
 const gameConditions = 'Answer "yes" if the number is even, otherwise answer "no".';
 

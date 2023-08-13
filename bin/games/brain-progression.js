@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import {
   greeting, getRandom, gameLauncher, getRandomBetween,
-} from '../src/index.js';
+} from '../../src/index.js';
 
 const gameConditions = 'What number is missing in the progression?';
 

@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import {
   greeting, getRandom, gameLauncher,
-} from '../src/index.js';
+} from '../../src/index.js';
 
 const gameConditions = 'Find the greatest common divisor of given numbers.';
 
