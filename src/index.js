@@ -13,6 +13,10 @@ function getRandom(range) {
   return Math.floor(Math.random() * range);
 }
 
+function getRandomBetween(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
 function getWrong(userAnswer, correctAnswer) {
   return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}`;
 }
@@ -32,5 +36,5 @@ function gameLauncher(correctCount, game) {
 }
 
 export {
-  userName, needForWin, greeting, getRandom, gameLauncher,
+  userName, needForWin, greeting, getRandom, gameLauncher, getRandomBetween,
 };
