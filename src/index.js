@@ -18,7 +18,7 @@ function getRandomBetween(min, max) {
 }
 
 function getWrong(userAnswer, correctAnswer) {
-  return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}`;
+  return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`;
 }
 
 function gameLauncher(correctCount, game) {
