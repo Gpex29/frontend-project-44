@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
 
 const userName = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
@@ -9,16 +7,9 @@ function greeting() {
   return `Hello, ${userName}!`;
 }
 
-function getRandom(range) {
-  return Math.floor(Math.random() * range);
-}
-
-function getRandomBetween(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
-
 function getWrong(userAnswer, correctAnswer) {
-  return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`;
+  console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+  console.log(`Let's try again, ${userName}!`);
 }
 
 function gameLauncher(correctCount, game) {
@@ -36,5 +27,5 @@ function gameLauncher(correctCount, game) {
 }
 
 export {
-  userName, needForWin, greeting, getRandom, gameLauncher, getRandomBetween,
+  greeting, gameLauncher,
 };
