@@ -1,15 +1,16 @@
-import gameEngine from '../index.js';
+import runEngine from '../index.js';
 import getRandomNumber from '../helpers.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => number % 2 === 0;
 
-const playRound = () => {
+const generateRound = () => {
   const questionNumber = getRandomNumber(0, 100);
-  const question = `Question: ${questionNumber}`;
   const answer = isEven(questionNumber) ? 'yes' : 'no';
-  return [question, answer];
+  return [questionNumber, answer];
 };
 
-export default gameEngine(description, playRound);
+const start = () => runEngine(description, generateRound);
+
+export default start;

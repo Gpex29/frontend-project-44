@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import start from '../src/games/calcLogic.js';
+import start from '../src/games/calculator.js';
 
-console.log(start);
+start();

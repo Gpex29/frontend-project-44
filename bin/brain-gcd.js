@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import start from '../src/games/gcdLogic.js';
+import start from '../src/games/findGCD.js';
 
-console.log(start);
+start();
