@@ -21,9 +21,9 @@ const generateRound = () => {
   const operator = operators[getRandomNumber(0, (operators.length - 1))];
   const operand1 = getRandomNumber(0, 5);
   const operand2 = getRandomNumber(0, 5);
-  const questionString = `${operand1} ${operator} ${operand2}`;
+  const question = `${operand1} ${operator} ${operand2}`;
   const answer = String(calculate(operand1, operand2, operator));
-  return [questionString, answer];
+  return [question, answer];
 };
 
 export default () => runEngine(description, generateRound);

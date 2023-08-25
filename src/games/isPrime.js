@@ -16,9 +16,9 @@ const isPrime = (number) => {
 };
 
 const generateRound = () => {
-  const questionNumber = getRandomNumber(0, 20);
-  const answer = isPrime(questionNumber) ? 'yes' : 'no';
-  return [questionNumber, answer];
+  const question = getRandomNumber(0, 20);
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 export default () => runEngine(description, generateRound);

@@ -13,9 +13,9 @@ const findGCD = (number1, number2) => {
 const generateRound = () => {
   const number1 = getRandomNumber(0, 25);
   const number2 = getRandomNumber(0, 25);
-  const questionString = `${number1} ${number2}`;
+  const question = `${number1} ${number2}`;
   const answer = String(findGCD(number1, number2));
-  return [questionString, answer];
+  return [question, answer];
 };
 
 export default () => runEngine(description, generateRound);
